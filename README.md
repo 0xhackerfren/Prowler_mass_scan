@@ -32,7 +32,7 @@ pip install prowler-cloud
 ```
 Or follow the official Prowler documentation for alternative installation methods.
 
-Usage:
+## Usage:
 
 Prepare your CSV file (for example, accounts.csv) with the columns:
 
@@ -40,7 +40,7 @@ Account Name
 Access Key ID
 Secret Access Key
 Run the script:
-
+\
 ```
 python prowler_mass_scan.py accounts.csv us-east-1
 ```
