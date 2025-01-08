@@ -46,12 +46,12 @@ python prowler_mass_scan.py accounts.csv us-east-1
 ```
 Replace accounts.csv with your CSV file path and us-east-1 with the region you want to scan.
 
-View Results:
+## View Results:
 
 The script prints Prowler's output to the console as it runs each scan.
 Prowler also generates multiple output files (e.g., csv, html, ocsf.json) in the ./output/ directory, organized by account name.
 
-Example CSV Format
+## Example CSV Format
 ```
 Account Name,Access Key ID,Secret Access Key
 dev_account,AKIAXXXXXXXX,xxxxxxxxxxxxxxxxxx
