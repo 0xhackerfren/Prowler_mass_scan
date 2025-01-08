@@ -1,12 +1,11 @@
 # Prowler AWS Multi-Account Scanner (In Development)
 
-This project provides a Python-based solution to scan multiple AWS accounts using [Prowler](https://github.com/prowler-cloud/prowler). The script reads AWS credentials from a CSV file, updates the default credentials, and then runs Prowler for each account. It also outputs real-time scan results to the console.
+This project provides a Python-based solution to scan multiple AWS accounts using [Prowler](https://github.com/prowler-cloud/prowler). The script reads AWS credentials from a CSV file, updates the default credentials, and then runs Prowler for each account. It also outputs real-time scan results to the console and renames Prowler output based on CSV account names. 
 
 ## Features
 
 - **Multiple Accounts**: Reads access keys and secret keys for multiple AWS accounts from a single CSV.
 - **Real-time Output**: Prowler's console output is streamed immediately to your terminal.
-- **Check Failures**: Return code `3` from Prowler is interpreted as some checks failing, not a complete error.
 - **Credentials Check**: Automatically prints the local `~/.aws/credentials` file each time it's updated, so you can confirm the correct credentials are in place.
 
 ## Future Plans
@@ -36,9 +35,9 @@ Or follow the official Prowler documentation for alternative installation method
 
 Prepare your CSV file (for example, accounts.csv) with the columns:
 
-Account Name
-Access Key ID
-Secret Access Key
+Account Name,
+Access Key ID,
+Secret Access Key,
 
 Run the script:
 
@@ -58,3 +57,5 @@ Account Name,Access Key ID,Secret Access Key
 dev_account,AKIAXXXXXXXX,xxxxxxxxxxxxxxxxxx
 prod_account,AKIAYYYYYYYY,yyyyyyyyyyyyyyyyyy
 ...
+
+Author: 0xHackerfren
