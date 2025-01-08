@@ -56,6 +56,5 @@ Prowler also generates multiple output files (e.g., csv, html, ocsf.json) in the
 Account Name,Access Key ID,Secret Access Key
 dev_account,AKIAXXXXXXXX,xxxxxxxxxxxxxxxxxx
 prod_account,AKIAYYYYYYYY,yyyyyyyyyyyyyyyyyy
-...
-
-Author: 0xHackerfren
+```
+## Author: 0xHackerfren
